@@ -25,7 +25,7 @@ public partial class App : ComponentBase
     protected override void OnInitialized()
     {
         JSRuntimeService.AssociateJSRuntime(JSRuntime);
-        NavigationService.AssociateNavigtionManager(NavigationManager);
+        NavigationService.AssociateNavigationManager(NavigationManager);
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
