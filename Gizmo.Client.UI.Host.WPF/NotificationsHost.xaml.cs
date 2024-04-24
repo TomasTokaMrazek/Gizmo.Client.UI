@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Interop;
 using Gizmo.UI;
 using Gizmo.UI.Services;
+using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebView.Wpf;
 using Microsoft.Extensions.FileProviders;
 
@@ -96,6 +97,12 @@ namespace Gizmo.Client.UI.Host.WPF
                 {
                     ComponentType = _uICompositionService.NotificationsComponentType,
                     Selector = "#app",
+                });
+
+                blazorWebView.RootComponents.Add(new RootComponent()
+                {
+                    ComponentType = typeof(HeadOutlet),
+                    Selector = "head::after",
                 });
 
                 blazorWebView.BlazorWebViewInitializing += (sender, args) =>

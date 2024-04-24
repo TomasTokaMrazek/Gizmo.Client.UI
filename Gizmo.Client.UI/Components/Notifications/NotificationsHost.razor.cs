@@ -9,12 +9,16 @@ using Gizmo.Web.Components;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Microsoft.JSInterop;
 
 namespace Gizmo.Client.UI.Components
 {
     public partial class NotificationsHost : CustomDOMComponentBase, IAsyncDisposable
     {
+        [Inject]
+        IOptionsMonitor<ClientInterfaceOptions> ClientInterfaceOptions { get; set; }
+
         private enum Animations
         {
             None,
