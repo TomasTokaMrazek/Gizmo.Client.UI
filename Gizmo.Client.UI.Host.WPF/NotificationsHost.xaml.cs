@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
@@ -6,8 +7,10 @@ using System.Windows.Interop;
 using Gizmo.UI;
 using Gizmo.UI.Services;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Components.WebView;
 using Microsoft.AspNetCore.Components.WebView.Wpf;
 using Microsoft.Extensions.FileProviders;
+using Microsoft.Web.WebView2.Core;
 
 namespace Gizmo.Client.UI.Host.WPF
 {
@@ -23,14 +26,14 @@ namespace Gizmo.Client.UI.Host.WPF
         public override IFileProvider CreateFileProvider(string contentRootDir)
         {
             var allProviders = _fileProviders.Append(base.CreateFileProvider(contentRootDir));
-           return new CompositeFileProvider(allProviders);            
+            return new CompositeFileProvider(allProviders);
         }
     }
 
     /// <summary>
     /// Interaction logic for NotificationsHost.xaml
     /// </summary>
-    public partial class NotificationsHost : Window , INotificationsHost
+    public partial class NotificationsHost : Window, INotificationsHost
     {
         public NotificationsHost(IUICompositionService uICompositionService,
             INotificationsService notificationsService,
@@ -40,7 +43,7 @@ namespace Gizmo.Client.UI.Host.WPF
             _uICompositionService = uICompositionService;
             _serviceProvider = serviceProvider;
             AllowsTransparency = true;
-            Background =  System.Windows.Media.Brushes.Transparent;
+            Background = System.Windows.Media.Brushes.Transparent;
             WindowStyle = WindowStyle.None;
             WindowStartupLocation = WindowStartupLocation.CenterScreen;
             _notificationsService = notificationsService;
@@ -56,7 +59,7 @@ namespace Gizmo.Client.UI.Host.WPF
 
         public async Task HideAsync()
         {
-            if(!isOpen)
+            if (!isOpen)
             {
                 return;
             }
@@ -71,13 +74,13 @@ namespace Gizmo.Client.UI.Host.WPF
 
         public async Task ShowAsync()
         {
-            if(isOpen)
+            if (isOpen)
             {
                 return;
             }
 
             isOpen = true;
-            
+
             var appAssembly = _uICompositionService.AppAssembly;
             var notificationsComponent = _uICompositionService.NotificationsComponentType;
 
@@ -85,12 +88,13 @@ namespace Gizmo.Client.UI.Host.WPF
 
             var blazorWebView = await Dispatcher.InvokeAsync(() =>
             {
-                var blazorWebView = new CustomBlazor(manifestEmbeddedProvider)
+                var blazorWebView = new CustomBlazor([manifestEmbeddedProvider])
                 {
                     Services = _serviceProvider,
                     MaxHeight = 600,
                     VerticalAlignment = VerticalAlignment.Top,
                     HorizontalAlignment = HorizontalAlignment.Stretch,
+                    BlazorWebViewInitialized = BlazorWebViewInit,
                 };
 
                 blazorWebView.RootComponents.Add(new RootComponent()
@@ -117,12 +121,25 @@ namespace Gizmo.Client.UI.Host.WPF
 
                 return blazorWebView;
             });
-        
-      
-           Dispatcher.Invoke( Show);
+
+
+            Dispatcher.Invoke(Show);
             _VIEW_HOST.Child = blazorWebView;
             blazorWebView.HostPage = @"wwwroot\notifications.html";
-            
+
+        }
+
+        private void BlazorWebViewInit(object sender, BlazorWebViewInitializedEventArgs e)
+        {
+            if (sender is BlazorWebView view)
+            {
+                var staticFiles = Path.Combine(Environment.CurrentDirectory, "static");
+                if (Directory.Exists(staticFiles))
+                {
+                    //map static folder
+                    view.WebView.CoreWebView2.SetVirtualHostNameToFolderMapping("static", staticFiles, CoreWebView2HostResourceAccessKind.Allow);
+                }
+            }
         }
 
         protected override void OnSourceInitialized(EventArgs e)
@@ -147,12 +164,12 @@ namespace Gizmo.Client.UI.Host.WPF
         private async void _notificationsService_NotificationsChanged(object sender, NotificationsChangedArgs e)
         {
             var visibleCount = _notificationsService.GetVisible().Count();
-            if(visibleCount> 0 && !isOpen)
+            if (visibleCount > 0 && !isOpen)
             {
                 await ShowAsync();
             }
 
-            if(visibleCount<=0 && isOpen)
+            if (visibleCount <= 0 && isOpen)
             {
                 await HideAsync();
             }

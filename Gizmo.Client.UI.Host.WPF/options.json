@@ -10,7 +10,7 @@
     "ProductsPageMaxItemsPerRow": 6,
     "QuickLaunchMaxItems": 16,
     "DisableUserLock": false,
-    "StyleSheet": "test.css"
+    "StyleSheet": "main.css"
   },
   "Currency": {
     "CurrencySymbol": null,
