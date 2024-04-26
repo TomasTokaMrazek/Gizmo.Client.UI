@@ -1,0 +1,271 @@
+//TODO: LOGIN BACKGROUND ISSUE
+//TODO: GLOBAL SEARCH DEFAULT ICONS
+
+@import '_variables.scss';
+
+@import '_buttons.scss';
+@import '_inputs.scss';
+
+@import '_layout.scss';
+@import '_login.scss';
+@import '_apps.scss';
+@import '_pos.scss';
+@import '_profile.scss';
+
+@import '_global-search.scss';
+
+[client-theme] {
+
+	/*Password tooltip.*/
+	.giz-client-tooltip {
+		color: $background-text-color;
+		background-color: $background-color;
+
+		&--top {
+			.giz-client-tooltip-pin {
+				border-color: $background-color transparent transparent transparent;
+			}
+		}
+
+		&--left {
+			.giz-client-tooltip-pin {
+				border-color: transparent transparent transparent $background-color;
+			}
+		}
+	}
+
+	.giz-home-apps__header__quick-launch,
+	.giz-home-apps__header__ads,
+	.giz-shop__products__header__tab {
+		background-color: $quick-launch-background-color;
+	}
+
+	.quick-launcher-switch {
+		&.giz-button-group {
+			border: 0.1rem solid $background-color-highlight-active;
+
+			.giz-button {
+				color: $background-text-color;
+
+				&.selected {
+					color: $primary-color;
+					background-color: $background-color-highlight-active;
+				}
+			}
+		}
+	}
+
+	.giz-dock {
+		&-item {
+			&-tooltip {
+				color: $background-text-color;
+				background-color: $background-color;
+				box-shadow: 0 0.4rem 2.0rem $box-shadow-1;
+			}
+		}
+	}
+
+	.giz-user-online-deposit {
+		color: $background-text-color;
+
+		&__submitted {
+			&__summary {
+				border-bottom: 0.1rem solid $background-text-color-light;
+			}
+
+			&__qr {
+				border: 0.1rem solid $background-text-color-light;
+
+				&__label {
+					color: $background-text-color-light;
+					background-color: $background-color;
+				}
+			}
+
+			&__action {
+				border: 0.1rem solid $background-text-color-light;
+
+				&__label {
+					color: $background-text-color-light;
+					background-color: $background-color;
+				}
+			}
+		}
+		
+		&-menu {
+			box-shadow: 0 3.2rem 6.4rem $box-shadow-2, 0 0.2rem 2.1rem $box-shadow-2;
+		}
+	}
+
+	.giz-user-online-deposit-dialog {
+		.giz-button-group {
+			.giz-button {
+				color: $background-text-color;
+				background-color: $background-color-highlight;
+
+				&.selected {
+					color: $primary-color;
+					background-color: $background-color-highlight-active;
+				}
+			}
+		}
+	}
+
+	.giz-ads-carousel {
+		&-item {
+			&__content {
+				&__actions {
+					.giz-button {
+						box-shadow: 0 0.4rem 0.4rem $box-shadow-1, 0 0.8rem 20.4rem $box-shadow-2;
+					}
+				}
+			}
+		}
+	}
+
+	.giz-ads-carousel-item {
+		background-color: $background-color;
+	}
+	
+	.giz-client-popup {
+		filter: drop-shadow(0 0.4rem 20 $box-shadow-2);
+	}
+
+	.giz-client-tooltip {
+		filter: drop-shadow(0 0.4rem 20 $box-shadow-2);
+	}
+
+	.giz-home-apps {
+		&__header {
+			&__quick-launch {
+				box-shadow: inset 0 0 10.1rem $box-shadow-4;
+			}
+
+			&__ads {
+				box-shadow: inset 0 0 10.1rem $box-shadow-4;
+			}
+		}
+	}
+
+	.giz-shop {
+		&__products {
+			&__header {
+				&__tab {
+					box-shadow: inset 0 0 10.1rem $box-shadow-4;
+				}
+			}
+		}
+	}
+
+	//##############################
+	//Dialog
+	//##############################
+
+	.giz-dialog {
+		background: $dialog-overlay-background;
+		backdrop-filter: $dialog-overlay-backdrop-filter;
+	}
+
+	.giz-client-dialog {
+		color: $background-text-color;
+		background-color: $background-color;
+		box-shadow: 0 0.8rem 3.2rem $box-shadow-1;
+
+		&__header {
+			&__title {
+				color: $background-text-color;
+			}
+
+			&__subtitle {
+				color: $background-text-color-light;
+			}
+		}
+	}
+
+	.giz-client-alert-dialog {
+		color: $background-text-color;
+
+		.giz-client-alert-message {
+			color: $background-text-color;
+		}
+	}
+
+	//##############################
+	//End Dialog
+	//##############################
+
+	//##############################
+	//DataGrid
+	//##############################
+
+	.giz-data-grid,
+	.giz-user-history__body .giz-data-grid,
+	.giz-checkout-dialog .giz-checkout__list .giz-data-grid {
+		color: $background-text-color;
+		background-color: $background-color;
+
+		/*Header*/
+		thead {
+
+			td,
+			th {
+				color: $background-text-color-light;
+				background-color: $background-color;
+			}
+		}
+
+		/*Body*/
+		tbody {
+
+			/*Row Hover*/
+			&>tr:not(.giz-data-grid-row-detail):hover {
+				background-color: $background-color-highlight;
+			}
+		}
+
+		/*Expanded Row*/
+		.giz-data-grid-row-detail {
+			background-color: $background-color-highlight-active;
+		}
+	}
+
+	//##############################
+	//End DataGrid
+	//##############################	
+
+	//##############################
+	//User Lock
+	//##############################
+
+	.giz-user-lock {
+		color: $background-text-color;
+	}
+
+	.giz-user-lock-overlay {
+		background: $dialog-overlay-background;
+		backdrop-filter: $dialog-overlay-backdrop-filter;
+	}
+
+	.giz-user-lock__title {
+		text-shadow: 0 0.4rem 0.4rem $text-shadow-1, 0 0.8rem 2.4rem $text-shadow-2;
+	}
+
+	.giz-user-lock__subtitle {
+		text-shadow: 0 0.2rem 0.2rem $text-shadow-1, 0 0.2rem 0.4rem $text-shadow-2;
+	}
+
+	//##############################
+	//End User Lock
+	//##############################
+}
+
+[client-theme] {
+	&.giz-notifications {
+		color: $background-text-color;
+		background-color: $background-color;
+
+		&__header {
+			background-color: $background-color-highlight;
+		}
+	}
+}

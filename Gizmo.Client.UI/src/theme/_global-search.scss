@@ -1,0 +1,67 @@
+[client-theme] {
+
+    //##############################
+    //Global Search
+    //##############################
+
+    .giz-global-search {
+        background-color: $background-color-highlight;
+
+        input {
+            color: $background-text-color;
+        }
+
+        .giz-global-search-dropdown {
+            color: $background-text-color;
+            background-color: $background-color;
+            box-shadow: 0 0.4rem 0.4rem $box-shadow-3;
+
+            .giz-animate-spinner svg {
+                color: $primary-color;
+            }
+
+            .giz-global-search-section {
+                &__header {
+                    color: $background-text-color;
+
+                    &__more {
+                        color: $link-color;
+                    }
+                }
+            }
+
+            .giz-global-search-result-card {
+                &__category {
+                    color: $background-text-color-light;
+                }
+
+                &__title {
+                    color: $background-text-color;
+                }
+            }
+
+            .giz-empty-state {
+                &__title {
+                    color: $background-text-color;
+                }
+
+                &__text {
+                    color: $background-text-color-light;
+                }
+            }
+        }
+
+        &:focus-within {
+            border: 0.2rem solid $border-focus;
+        }
+    }
+
+    /*No results text style.*/
+    .global-search-no-results {
+        color: $background-text-color-light;
+    }
+
+    //##############################
+    //End Global Search
+    //##############################
+}

@@ -1,0 +1,199 @@
+[client-theme] {
+
+    //##############################
+	//CheckBox
+	//##############################
+	
+	.giz-check-box {
+		input+label {
+			color: $background-text-color;
+		}
+
+        input + label:before {
+			background-color: $background-color;
+            border: 0.1rem solid $border-rest;
+        }
+
+		input:checked + label:before {
+			background-color: $primary-color;
+			border: 0.2rem solid $primary-color;
+		}
+	}
+
+    .giz-user-agreement-dialog .giz-user-agreement-checkbox--required input + label:before {
+        border: 0.2rem solid $critical-color;
+    }
+
+	//##############################
+	//End CheckBox
+	//##############################
+
+	//##############################
+	//Select
+	//##############################
+
+	.giz-select {
+		.giz-select__dropdown {
+			color: $background-text-color;
+			background-color: $background-color;
+			box-shadow: 0 0.2rem 1.6rem $box-shadow-3;
+
+			.giz-list .giz-list-item {
+				color: $background-text-color;
+			}
+
+			.giz-list.giz-list--selectable .giz-list-item.active {
+				color: $background-text-color;
+				background-color: $background-color-highlight-active;
+			}
+
+			.giz-list.giz-list--selectable .giz-list-item.selected {
+				color: $primary-color;
+			}
+
+			.giz-list.giz-list--clickable .giz-list-item:hover {
+				color: $background-text-color;
+				background-color: $background-color-highlight;
+			}
+		}
+
+		&.app-filter--filled {
+			.giz-input-root {
+				input {
+					color: $primary-color;
+				}
+
+				.giz-icon {
+					svg {
+						color: $primary-color;
+					}
+				}
+			}
+		}
+	}
+
+	//##############################
+	//End Select
+	//##############################
+
+	//##############################
+	//MultiSelect
+	//##############################
+	
+	.giz-multi-select {
+		&__dropdown {
+			color: $background-text-color;
+			background-color: $background-color;
+			box-shadow: 0 0.2rem 1.6rem $box-shadow-3;
+
+			.giz-multi-select-list {
+				.giz-multi-select-item {
+					border: 0.1rem solid $background-color-highlight;
+
+					&.selected {
+						border: 0.1rem solid transparent;
+						background-color: $background-color-highlight-active;
+					}
+				}
+			}
+		}
+
+		&.app-filter--filled {
+			.giz-input-root {
+				color: $primary-color;
+
+				.giz-icon {
+					svg {
+						color: $primary-color;
+					}
+				}
+			}
+		}
+	}
+
+	//##############################
+	//End MultiSelect
+	//##############################
+
+	//##############################
+	//Input
+	//##############################
+	
+	.giz-input-control {
+		.giz-input-root {
+			input {
+				color: $background-text-color;
+				
+				&::placeholder {
+					color: $input-placeholder-color;
+				}
+			}
+
+			input.disabled, input[disabled] {
+				color: $input-disabled-text-color;
+			}
+
+			textarea {
+				color: $background-text-color;
+				
+				&::placeholder {
+					color: $input-placeholder-color;
+				}
+			}
+
+			textarea.disabled, textarea[disabled] {
+				color: $background-text-color-light;
+			}
+
+			svg {
+				color: $background-text-color;
+			}
+
+			.giz-mask-left {
+				color: $background-text-color-light;
+			}
+
+			&--outline {
+				color: $background-text-color;
+				background-color: $background-color;
+				border: 0.1rem solid $border-rest;
+
+				&:hover {
+					border: 0.2rem solid $border-hover;
+				}
+
+				&:focus-within {
+					border: 0.2rem solid $border-focus;
+				}
+			}
+
+			&--invalid {
+				&.giz-input-root--outline {
+					border: 0.1rem solid $critical-color;
+
+					&:hover {
+						border: 0.2rem solid $critical-color;
+					}
+
+					&:focus-within {
+						border: 0.2rem solid $critical-color;
+					}
+				}
+			}
+		}
+
+		.giz-input-root.disabled, .giz-input-root[disabled] {
+			color: $input-disabled-text-color;
+			border: 0.1rem solid $input-disabled-border-color;
+		}
+	}
+
+	.giz-input-validation-label {
+		color: $critical-color;
+	}
+
+	//##############################
+	//End Input
+	//##############################
+
+}

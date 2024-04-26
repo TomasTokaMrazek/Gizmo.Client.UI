@@ -1,0 +1,207 @@
+[client-theme] {
+
+	//##############################
+	//User Profile
+	//##############################
+
+	/*User Profile Header.*/
+	.giz-profile-header {
+		&__info {
+			&__username {
+				color: $background-text-color;
+				text-shadow: 0 0.4rem 0.4rem $text-shadow-1, 0 0.4rem 0.8rem $text-shadow-2;
+			}
+
+			&__stats-credit-item {
+				&__header {
+					color: $background-text-color-light;
+					text-shadow: 0 0.1rem 0.1rem $text-shadow-1, 0 0.2rem 0.2rem $text-shadow-2;
+				}
+
+				&__body {
+					text-shadow: 0 0.1rem 0.1rem $text-shadow-1, 0 0.2rem 0.2rem $text-shadow-2;
+				}
+			}
+
+			&__stats-text {
+				.giz-title {
+					color: $background-text-color-light;
+					text-shadow: 0 0.2rem 0.2rem $text-shadow-1, 0 0.1rem 0.1rem $text-shadow-2;
+				}
+
+				.giz-numbers {
+					color: $background-text-color;
+					text-shadow: 0 0.2rem 0.2rem $text-shadow-1, 0 0.1rem 0.1rem $text-shadow-2;
+				}
+			}
+
+			&__stats-credit-item {
+				&__body {
+					color: $background-text-color;
+				}
+			}
+		}
+
+		.giz-user-credit-tooltip {
+			color: $background-text-color;
+
+			&-wrapper {
+				background-color: $background-color;
+				box-shadow: 0 3.2rem 6.4rem $box-shadow-2, 0 0.2rem 2.1rem $box-shadow-2;
+			}
+		}
+	}
+
+	/*"User details" tab.*/
+	.giz-profile-section-item {
+		&__icon {
+			color: $background-text-color-light;
+			background-color: $background-color-highlight;
+		}
+
+		&__info {
+			&__title {
+				color: $background-text-color-light;
+			}
+
+			&__text--name {
+				color: $background-text-color-light;
+			}
+		}
+	}
+
+	/*User Profile Menu Tab.*/
+	.giz-profile-navigation {
+		border: 0.1rem solid $background-text-color-light;
+	}
+
+	.giz-profile-navigation-item {
+		text-shadow: 0 0.1rem 0.1rem $text-shadow-1, 0 0.2rem 0.2rem $text-shadow-2;
+
+		&>a {
+			color: $background-text-color;
+
+			.giz-icon {
+				color: $background-text-color;
+			}
+
+			&.active {
+				color: $primary-color;
+
+				.giz-icon {
+					svg {
+						color: $primary-color;
+					}
+				}
+
+				/*Bottom Line*/
+				&:before {
+					background-color: $primary-color;
+				}
+			}
+		}
+	}
+
+	/*"Available time" and "Purchases" tabs.*/
+	.giz-user-history {
+		&__header {
+			color: $background-text-color;
+		}
+
+		&__body {
+			background-color: $background-color;
+			border: 0.1rem solid $background-text-color-light;
+
+			.giz-animate-spinner svg {
+				color: $primary-color;
+			}
+		}
+
+		/*Pagination buttons.*/
+		&__footer {
+			.giz-button {
+				color: $background-text-color;
+			}
+
+			.giz-button:hover {
+				background-color: $background-color-highlight;
+			}
+
+			.giz-button.disabled,
+			.giz-button[disabled] {
+				color: $background-text-color-light;
+			}
+		}
+	}
+
+	/*"Available time" tab.*/
+	.giz-user-time-products {
+		&-title-header-tooltip-item {
+			&__icon {
+				background-color: $background-color-highlight;
+			}
+		}
+
+		&-properties-header-tooltip-item {
+			&__icon {
+				background-color: $background-color-highlight;
+			}
+		}
+
+		&-title-header-tooltip {
+			color: $background-text-color;
+
+			&-wrapper {
+				background-color: $background-color;
+			}
+		}
+
+		&-properties-header-tooltip {
+			color: $background-text-color;
+
+			&-wrapper {
+				background-color: $background-color;
+			}
+		}
+		
+		&-title-header-tooltip {
+			&-wrapper {
+				box-shadow: 0 3.2rem 6.4rem $box-shadow-2, 0 0.2rem 2.1rem $box-shadow-2;
+			}
+		}
+
+		&-properties-header-tooltip {
+			&-wrapper {
+				box-shadow: 0 3.2rem 6.4rem $box-shadow-2, 0 0.2rem 2.1rem $box-shadow-2;
+			}
+		}
+	}
+
+	.order-line-details a.order-line-details-product-name {
+		color: $link-color;
+	}
+	
+	/*"Purchases" tab.*/
+	.order-details {
+		&-points-title {
+			color: $background-text-color-light;
+		}
+
+		&-points {
+			color: $background-text-color;
+		}
+
+		&-notes-title {
+			color: $background-text-color-light;
+		}
+
+		&-notes {
+			color: $background-text-color;
+		}
+	}
+
+	//##############################
+	//End User Profile
+	//##############################
+
+}

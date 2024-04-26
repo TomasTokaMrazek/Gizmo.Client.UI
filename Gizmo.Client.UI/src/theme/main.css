@@ -1,0 +1,1037 @@
+/*Basic Colors*/
+/*End Basic Colors*/
+/*Borders*/
+/*End Borders*/
+/*Buttons*/
+/*End Buttons*/
+[client-theme] {
+  /*Rest*/
+  /*Hover*/
+  /*Disabled*/
+  /*Rest*/
+  /*Hover*/
+  /*Disabled*/
+  /*Rest*/
+  /*Hover*/
+  /*Disabled*/
+  /*Rest*/
+  /*Hover*/
+  /*Disabled*/
+  /*Rest*/
+  /*Hover*/
+  /*Disabled*/
+  /*Rest*/
+  /*Hover*/
+  /*Rest*/
+  /*Hover*/
+}
+[client-theme] .giz-button--fill.accent:not(.disabled) {
+  color: rgb(230, 230, 230);
+  background-color: rgb(90, 10, 100);
+}
+[client-theme] .giz-button--fill.accent:not(.disabled) .giz-animate-spinner svg {
+  color: rgb(230, 230, 230);
+}
+[client-theme] .giz-button--fill.accent:not(.disabled):hover {
+  color: rgb(230, 230, 230);
+  background-color: rgb(150, 20, 160);
+}
+[client-theme] .giz-button--fill.accent.disabled,
+[client-theme] .giz-button--fill[disabled] {
+  color: rgb(100, 100, 100);
+  background-color: gray;
+}
+[client-theme] .giz-button--fill.accent.disabled .giz-animate-spinner svg,
+[client-theme] .giz-button--fill[disabled] .giz-animate-spinner svg {
+  color: rgb(100, 100, 100);
+}
+[client-theme] .giz-button--fill.primary:not(.disabled) {
+  color: rgb(230, 230, 230);
+  background-color: rgb(90, 10, 100);
+}
+[client-theme] .giz-button--fill.primary:not(.disabled) .giz-animate-spinner svg {
+  color: rgb(230, 230, 230);
+}
+[client-theme] .giz-button--fill.primary:not(.disabled):hover {
+  color: rgb(230, 230, 230);
+  background-color: rgb(150, 20, 160);
+}
+[client-theme] .giz-button--fill.primary.disabled,
+[client-theme] .giz-button--fill[disabled] {
+  color: rgb(100, 100, 100);
+  background-color: gray;
+}
+[client-theme] .giz-button--fill.primary.disabled .giz-animate-spinner svg,
+[client-theme] .giz-button--fill[disabled] .giz-animate-spinner svg {
+  color: rgb(100, 100, 100);
+}
+[client-theme] .giz-button--outline.primary:not(.disabled) {
+  color: rgb(90, 10, 100);
+  background-color: transparent;
+  border: 0.2rem solid rgb(90, 10, 100);
+}
+[client-theme] .giz-button--outline.primary:not(.disabled) .giz-animate-spinner svg {
+  color: rgb(90, 10, 100);
+}
+[client-theme] .giz-button--outline.primary:not(.disabled):hover {
+  color: rgb(150, 20, 160);
+  background-color: transparent;
+  border: 0.2rem solid rgb(150, 20, 160);
+}
+[client-theme] .giz-button--outline.primary.disabled,
+[client-theme] .giz-button--outline[disabled] {
+  color: rgb(114, 114, 114);
+  background-color: transparent;
+  border: 0.2rem solid rgb(148, 148, 148);
+}
+[client-theme] .giz-button--outline.primary.disabled .giz-animate-spinner svg,
+[client-theme] .giz-button--outline[disabled] .giz-animate-spinner svg {
+  color: rgb(114, 114, 114);
+}
+[client-theme] .giz-button--outline.accent:not(.disabled) {
+  color: rgb(90, 10, 100);
+  background-color: transparent;
+  border: 0.2rem solid rgb(90, 10, 100);
+}
+[client-theme] .giz-button--outline.accent:not(.disabled) .giz-animate-spinner svg {
+  color: rgb(90, 10, 100);
+}
+[client-theme] .giz-button--outline.accent:not(.disabled):hover {
+  color: rgb(150, 20, 160);
+  background-color: transparent;
+  border: 0.2rem solid rgb(150, 20, 160);
+}
+[client-theme] .giz-button--outline.accent.disabled,
+[client-theme] .giz-button--outline[disabled] {
+  color: rgb(114, 114, 114);
+  background-color: transparent;
+  border: 0.2rem solid rgb(148, 148, 148);
+}
+[client-theme] .giz-button--outline.accent.disabled .giz-animate-spinner svg,
+[client-theme] .giz-button--outline[disabled] .giz-animate-spinner svg {
+  color: rgb(114, 114, 114);
+}
+[client-theme] .giz-button--outline.info:not(.disabled) {
+  color: rgb(90, 10, 100);
+  background-color: transparent;
+  border: 0.2rem solid rgb(90, 10, 100);
+}
+[client-theme] .giz-button--outline.info:not(.disabled) .giz-animate-spinner svg {
+  color: rgb(90, 10, 100);
+}
+[client-theme] .giz-button--outline.info:not(.disabled):hover {
+  color: rgb(150, 20, 160);
+  background-color: transparent;
+  border: 0.2rem solid rgb(150, 20, 160);
+}
+[client-theme] .giz-button--outline.info.disabled,
+[client-theme] .giz-button--outline[disabled] {
+  color: rgb(114, 114, 114);
+  background-color: transparent;
+  border: 0.2rem solid rgb(148, 148, 148);
+}
+[client-theme] .giz-button--outline.info.disabled .giz-animate-spinner svg,
+[client-theme] .giz-button--outline[disabled] .giz-animate-spinner svg {
+  color: rgb(114, 114, 114);
+}
+[client-theme] .giz-button--text {
+  color: rgb(70, 70, 70);
+  background-color: transparent;
+}
+[client-theme] .giz-button--text:hover {
+  color: rgb(50, 50, 50);
+  background-color: transparent;
+}
+[client-theme] .giz-button--text.disabled,
+[client-theme] .giz-button--text[disabled] {
+  color: rgb(114, 114, 114);
+  background-color: transparent;
+}
+[client-theme] .giz-icon-button--text {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-icon-button--text:hover {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-combo-button .giz-combo-button__dropdown .giz-list {
+  background-color: rgb(230, 230, 230);
+  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
+}
+[client-theme] .giz-combo-button .giz-combo-button__dropdown .giz-list .giz-list-item {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-combo-button .giz-combo-button__dropdown .giz-list.giz-list--clickable .giz-list-item:hover {
+  color: rgb(50, 50, 50);
+  background-color: rgba(210, 210, 210, 0.8);
+}
+
+[client-theme] .giz-check-box input + label {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-check-box input + label:before {
+  background-color: rgb(230, 230, 230);
+  border: 0.1rem solid rgb(90, 10, 100);
+}
+[client-theme] .giz-check-box input:checked + label:before {
+  background-color: rgb(90, 10, 100);
+  border: 0.2rem solid rgb(90, 10, 100);
+}
+[client-theme] .giz-user-agreement-dialog .giz-user-agreement-checkbox--required input + label:before {
+  border: 0.2rem solid rgb(255, 100, 0);
+}
+[client-theme] .giz-select .giz-select__dropdown {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+  box-shadow: 0 0.2rem 1.6rem rgba(0, 0, 0, 0.25);
+}
+[client-theme] .giz-select .giz-select__dropdown .giz-list .giz-list-item {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-select .giz-select__dropdown .giz-list.giz-list--selectable .giz-list-item.active {
+  color: rgb(50, 50, 50);
+  background-color: rgba(170, 170, 170, 0.8);
+}
+[client-theme] .giz-select .giz-select__dropdown .giz-list.giz-list--selectable .giz-list-item.selected {
+  color: rgb(90, 10, 100);
+}
+[client-theme] .giz-select .giz-select__dropdown .giz-list.giz-list--clickable .giz-list-item:hover {
+  color: rgb(50, 50, 50);
+  background-color: rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-select.app-filter--filled .giz-input-root input {
+  color: rgb(90, 10, 100);
+}
+[client-theme] .giz-select.app-filter--filled .giz-input-root .giz-icon svg {
+  color: rgb(90, 10, 100);
+}
+[client-theme] .giz-multi-select__dropdown {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+  box-shadow: 0 0.2rem 1.6rem rgba(0, 0, 0, 0.25);
+}
+[client-theme] .giz-multi-select__dropdown .giz-multi-select-list .giz-multi-select-item {
+  border: 0.1rem solid rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-multi-select__dropdown .giz-multi-select-list .giz-multi-select-item.selected {
+  border: 0.1rem solid transparent;
+  background-color: rgba(170, 170, 170, 0.8);
+}
+[client-theme] .giz-multi-select.app-filter--filled .giz-input-root {
+  color: rgb(90, 10, 100);
+}
+[client-theme] .giz-multi-select.app-filter--filled .giz-input-root .giz-icon svg {
+  color: rgb(90, 10, 100);
+}
+[client-theme] .giz-input-control .giz-input-root input {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-input-control .giz-input-root input::-moz-placeholder {
+  color: rgb(114, 114, 114);
+}
+[client-theme] .giz-input-control .giz-input-root input::placeholder {
+  color: rgb(114, 114, 114);
+}
+[client-theme] .giz-input-control .giz-input-root input.disabled, [client-theme] .giz-input-control .giz-input-root input[disabled] {
+  color: rgb(114, 114, 114);
+}
+[client-theme] .giz-input-control .giz-input-root textarea {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-input-control .giz-input-root textarea::-moz-placeholder {
+  color: rgb(114, 114, 114);
+}
+[client-theme] .giz-input-control .giz-input-root textarea::placeholder {
+  color: rgb(114, 114, 114);
+}
+[client-theme] .giz-input-control .giz-input-root textarea.disabled, [client-theme] .giz-input-control .giz-input-root textarea[disabled] {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-input-control .giz-input-root svg {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-input-control .giz-input-root .giz-mask-left {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-input-control .giz-input-root--outline {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+  border: 0.1rem solid rgb(90, 10, 100);
+}
+[client-theme] .giz-input-control .giz-input-root--outline:hover {
+  border: 0.2rem solid rgb(150, 20, 160);
+}
+[client-theme] .giz-input-control .giz-input-root--outline:focus-within {
+  border: 0.2rem solid rgb(70, 5, 80);
+}
+[client-theme] .giz-input-control .giz-input-root--invalid.giz-input-root--outline {
+  border: 0.1rem solid rgb(255, 100, 0);
+}
+[client-theme] .giz-input-control .giz-input-root--invalid.giz-input-root--outline:hover {
+  border: 0.2rem solid rgb(255, 100, 0);
+}
+[client-theme] .giz-input-control .giz-input-root--invalid.giz-input-root--outline:focus-within {
+  border: 0.2rem solid rgb(255, 100, 0);
+}
+[client-theme] .giz-input-control .giz-input-root.disabled, [client-theme] .giz-input-control .giz-input-root[disabled] {
+  color: rgb(114, 114, 114);
+  border: 0.1rem solid rgb(114, 114, 114);
+}
+[client-theme] .giz-input-validation-label {
+  color: rgb(255, 100, 0);
+}
+
+[client-theme] {
+  /*Apply base color to the whole app.*/
+  /*Apply link color to the whole app.*/
+  /*Background image gradient.*/
+  /*Modules Menu Tab*/
+  /*Icon Buttons*/
+  /*User Icon Button*/
+  /*User Dropdown Button*/
+  /*User Dropdown*/
+  /*Assistance Dropdown Button*/
+  /*Assistance Dropdown*/
+  /*Notifications Dropdown Button*/
+  /*Notifications Dropdown*/
+  /*Active Apps Dropdown Button*/
+  /*Active Apps Dropdown*/
+  /*Balance Tooltip Activator*/
+  /*Balance Tooltip*/
+}
+[client-theme] .giz-container {
+  color: rgb(50, 50, 50);
+}
+[client-theme] a {
+  color: rgb(230, 0, 230);
+}
+[client-theme] .giz-main-container {
+  background-color: rgb(230, 230, 230);
+}
+[client-theme] .giz-background:after {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.0001) 0%, rgba(255, 255, 255, 0.0156863) 9.22%, rgba(255, 255, 255, 0.054902) 18.76%, rgba(255, 255, 255, 0.117647) 28.48%, rgba(255, 255, 255, 0.2) 38.19%, rgba(255, 255, 255, 0.290196) 47.75%, rgba(255, 255, 255, 0.392157) 56.99%, rgba(255, 255, 255, 0.501961) 65.75%, rgba(255, 255, 255, 0.607843) 73.87%, rgba(255, 255, 255, 0.709804) 81.18%, rgba(255, 255, 255, 0.8) 87.52%, rgba(255, 255, 255, 0.846259) 90.45%, rgba(255, 255, 255, 0.882353) 92.74%, rgba(255, 255, 255, 0.90408) 92.75%, rgba(255, 255, 255, 0.945098) 96.66%, rgba(255, 255, 255, 0.959815) 99.12%, rgba(255, 255, 255, 0.978709) 99.13%, rgba(255, 255, 255, 0.984314) 99.14%, rgba(255, 255, 255, 0.986777) 99.98%, rgba(255, 255, 255, 0.996851) 99.99%, #ffffff 100%, #ffffff 100%, #ffffff 100%);
+  -webkit-backdrop-filter: blur(0.4rem);
+          backdrop-filter: blur(0.4rem);
+}
+[client-theme] .giz-expansion-panel__header__content {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-section__header {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-container .giz-app__header {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+  border-bottom: 0.1rem solid rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-header__modules-menu-item > a .giz-icon {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-header__modules-menu-item > a.active {
+  /*Bottom Line*/
+}
+[client-theme] .giz-header__modules-menu-item > a.active .giz-icon {
+  color: rgb(90, 10, 100);
+}
+[client-theme] .giz-header__modules-menu-item > a.active:before {
+  background-color: rgb(90, 10, 100);
+}
+[client-theme] .user-menu-item-button--box {
+  color: rgb(50, 50, 50);
+  background-color: rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-header__user-menu-item > .giz-user-menu-button {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-user-dropdown.open .giz-user-menu-button {
+  color: rgb(90, 10, 100);
+  background-color: rgba(170, 170, 170, 0.8);
+  box-shadow: inset 0 0 10.1rem rgba(255, 255, 255, 0.05);
+}
+[client-theme] .giz-user-dropdown.open .giz-user-menu-button .giz-icon {
+  color: rgb(90, 10, 100);
+}
+[client-theme] .giz-user-links {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.35), 0 0.2rem 2.1rem rgba(0, 0, 0, 0.35);
+}
+[client-theme] .giz-user-links-item {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-user-links-item__icon {
+  background-color: rgba(210, 210, 210, 0.8);
+  box-shadow: inset 0 0 10.1rem rgba(255, 255, 255, 0.05);
+}
+[client-theme] .giz-user-links-item__icon svg {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-user-links-item:hover {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-user-links-item:hover .giz-user-links-item__icon {
+  background-color: rgba(170, 170, 170, 0.8);
+}
+[client-theme] .giz-user-links-item:hover .giz-user-links-item__icon svg {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-assistance-dropdown.open .user-menu-item-button--box {
+  color: rgb(90, 10, 100);
+  background-color: rgba(170, 170, 170, 0.8);
+}
+[client-theme] .giz-menu-assistance {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.35), 0 0.2rem 2.1rem rgba(0, 0, 0, 0.35);
+}
+[client-theme] .giz-menu-assistance-note-counter {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-notifications-dropdown.open .user-menu-item-button--box {
+  color: rgb(90, 10, 100);
+  background-color: rgba(170, 170, 170, 0.8);
+}
+[client-theme] .giz-menu-notifications {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.35), 0 0.2rem 2.1rem rgba(0, 0, 0, 0.35);
+}
+[client-theme] .giz-menu-notifications__header {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-menu-notifications__footer {
+  color: rgb(230, 0, 230);
+  border-top: 0.1rem solid rgb(70, 70, 70);
+}
+[client-theme] .giz-menu-notifications .giz-empty-state__title {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-menu-notifications .giz-empty-state__text {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-active-apps-dropdown.open .user-menu-item-button--box {
+  color: rgb(90, 10, 100);
+  background-color: rgba(170, 170, 170, 0.8);
+}
+[client-theme] .giz-active-apps {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.35), 0 0.2rem 2.1rem rgba(0, 0, 0, 0.35);
+}
+[client-theme] .giz-active-apps__header {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-active-app-card__info__category {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-active-app-card__info__title {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-header-user-balance {
+  color: rgb(50, 50, 50);
+  background-color: rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-user-balance-tooltip {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-user-balance-tooltip-wrapper {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.35), 0 0.2rem 2.1rem rgba(0, 0, 0, 0.35);
+}
+[client-theme] .giz-user-balance-tooltip__header__link {
+  border-bottom: 0.1rem solid rgb(230, 0, 230);
+}
+
+[client-theme] {
+  /*Host number*/
+  /*Server connection icon*/
+  /*Version colors*/
+  /*Login, Registration, Recovery right side*/
+}
+[client-theme] .giz-host-number {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-server {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-version__title {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-version__version {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-login-card {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+  /*Login Button Group*/
+  /*Login Separator*/
+}
+[client-theme] .giz-login-card a {
+  color: rgb(230, 0, 230);
+}
+[client-theme] .giz-login-card .giz-button-group {
+  border: 0.1rem solid rgb(90, 10, 100);
+}
+[client-theme] .giz-login-card .giz-button-group .giz-button {
+  color: rgb(50, 50, 50);
+  background-color: transparent;
+}
+[client-theme] .giz-login-card .giz-button-group .giz-button.selected {
+  color: rgb(230, 230, 230);
+  background-color: rgb(90, 10, 100);
+}
+[client-theme] .giz-login-card .giz-alternative-login__separator {
+  background-color: rgb(230, 230, 230);
+  /*Separator Line*/
+  /*Separator Text*/
+}
+[client-theme] .giz-login-card .giz-alternative-login__separator:before {
+  background-color: rgb(70, 70, 70);
+}
+[client-theme] .giz-login-card .giz-alternative-login__separator span {
+  color: rgb(70, 70, 70);
+  background-color: rgb(230, 230, 230);
+}
+[client-theme] .giz-login-card .giz-login-subtitle--sign-up {
+  color: rgb(70, 70, 70);
+}
+
+[client-theme] {
+  /*Application card.*/
+  /*Application details page.*/
+  /*Executable button.*/
+  /*Application filters chip.*/
+}
+[client-theme] .giz-app-card {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+  /*Blur image on hover.*/
+}
+[client-theme] .giz-app-card__content__image {
+  background-color: rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-app-card__content__footer-category {
+  color: rgb(70, 70, 70);
+  background-color: rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-app-card :hover .giz-app-card__content__image__hovered {
+  background-color: rgba(170, 170, 170, 0.8);
+}
+[client-theme] .giz-app-details__app {
+  /*Back button*/
+}
+[client-theme] .giz-app-details__app__navigation > div {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-app-details__app__info__image {
+  background-color: rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-app-details__app__info__details {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-app-details .giz-app-details-card-brand-title {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-app-details .giz-app-details-card-brand-text {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-universal-executable__description__app {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-universal-executable__description__exe {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-chip {
+  color: rgb(90, 10, 100);
+  background-color: rgb(230, 230, 230);
+}
+[client-theme] .giz-chip .giz-filters-icon {
+  color: rgb(90, 10, 100);
+}
+[client-theme] .giz-chip .giz-icon-button svg {
+  color: rgb(230, 230, 230);
+}
+[client-theme] .giz-chip .giz-icon-button.giz-input-button-clear .giz-icon {
+  background-color: rgb(90, 10, 100);
+}
+[client-theme] .giz-executable-card__executable-status {
+  text-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+[client-theme] {
+  /*POS Menu Tab.*/
+  /*Product card.*/
+  /*Product details page.*/
+  /*POS Cart*/
+}
+[client-theme] .giz-client-tab-item {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-client-tab-item.active {
+  color: rgb(90, 10, 100);
+  /*Bottom Line*/
+}
+[client-theme] .giz-client-tab-item.active:before {
+  background-color: rgb(90, 10, 100);
+}
+[client-theme] .giz-product-card {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+  /*.giz-product-card__content__image__hovered {
+  	background-color: $background-color-highlight;
+  }*/
+  /*Blur image on hover.*/
+}
+[client-theme] .giz-product-card__title {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-product-card .giz-time-product-details {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-product-card .giz-timeline-header {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-product-card .giz-timeline-header:after {
+  border: 0.1rem solid rgb(70, 70, 70);
+}
+[client-theme] .giz-product-card .giz-timeline-item:before {
+  background-color: rgb(70, 70, 70);
+  border: 0.1rem solid rgb(70, 70, 70);
+}
+[client-theme] .giz-product-card .giz-timeline-item:after {
+  border: 0.1rem solid rgb(70, 70, 70);
+}
+[client-theme] .giz-product-card .giz-product-card__content__image {
+  background-color: rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-product-card:hover .giz-product-card__content__image__hovered {
+  background-color: rgba(170, 170, 170, 0.8);
+}
+[client-theme] .giz-product-card:hover .giz-button--fill.accent.giz-product-card-primary-button {
+  color: rgb(230, 230, 230);
+  background-color: rgb(90, 10, 100);
+}
+[client-theme] .giz-product-card .giz-bundle-product-details > span {
+  color: rgb(50, 50, 50);
+  text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.25), 0 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+[client-theme] .giz-product-details {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-product-details__product__navigation > div {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-product-details__product__info__image {
+  background-color: rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-product-details__product__info__additional__availability {
+  background-color: rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-product-details__product__info__additional__availability .giz-product-availability__title {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-product-details__product__info__additional__availability .giz-product-availability__body {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-product-details__product__info__additional__expirations__header {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-order__items {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+}
+[client-theme] .giz-order__items__footer {
+  box-shadow: 0 -0.3rem 5rem rgba(0, 0, 0, 0.25);
+}
+[client-theme] .giz-order__items .giz-empty-state__title {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-order__items .giz-empty-state__text {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-order__notes {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+}
+[client-theme] .giz-order__totals {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+}
+[client-theme] .giz-product-availability-show-more span:after {
+  border-top: 0.1rem solid rgb(230, 0, 230);
+}
+[client-theme] .giz-time-product-host-groups .giz-time-product-host-group {
+  color: rgb(50, 50, 50);
+  background-color: rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-time-product-host-groups .giz-time-product-host-group--additional {
+  color: rgb(50, 50, 50);
+  background-color: rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-time-product-host-groups .giz-time-product-host-group.active {
+  background-color: rgba(170, 170, 170, 0.8);
+}
+[client-theme] .giz-time-product-expiration {
+  color: #FFFFFF;
+}
+[client-theme] .giz-product-expiration {
+  color: #FFFFFF;
+}
+[client-theme] .giz-bundle-product-details {
+  text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.25), 0 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+[client-theme] .giz-bundle-product-details > span {
+  text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.25), 0 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+[client-theme] .giz-shop-quantity-picker {
+  color: rgb(50, 50, 50);
+  border: 0.1rem solid rgb(90, 10, 100);
+}
+[client-theme] .giz-checkout-dialog .giz-checkout__summary {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-checkout-dialog .giz-checkout__payment-method {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-checkout-dialog .giz-checkout .giz-select .giz-input-root {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+}
+
+[client-theme] {
+  /*User Profile Header.*/
+  /*"User details" tab.*/
+  /*User Profile Menu Tab.*/
+  /*"Available time" and "Purchases" tabs.*/
+  /*"Available time" tab.*/
+  /*"Purchases" tab.*/
+}
+[client-theme] .giz-profile-header__info__username {
+  color: rgb(50, 50, 50);
+  text-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25), 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+[client-theme] .giz-profile-header__info__stats-credit-item__header {
+  color: rgb(70, 70, 70);
+  text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.25), 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+[client-theme] .giz-profile-header__info__stats-credit-item__body {
+  text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.25), 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+[client-theme] .giz-profile-header__info__stats-text .giz-title {
+  color: rgb(70, 70, 70);
+  text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.25), 0 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+[client-theme] .giz-profile-header__info__stats-text .giz-numbers {
+  color: rgb(50, 50, 50);
+  text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.25), 0 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+[client-theme] .giz-profile-header__info__stats-credit-item__body {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-profile-header .giz-user-credit-tooltip {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-profile-header .giz-user-credit-tooltip-wrapper {
+  background-color: rgb(230, 230, 230);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.35), 0 0.2rem 2.1rem rgba(0, 0, 0, 0.35);
+}
+[client-theme] .giz-profile-section-item__icon {
+  color: rgb(70, 70, 70);
+  background-color: rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-profile-section-item__info__title {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-profile-section-item__info__text--name {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-profile-navigation {
+  border: 0.1rem solid rgb(70, 70, 70);
+}
+[client-theme] .giz-profile-navigation-item {
+  text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.25), 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+[client-theme] .giz-profile-navigation-item > a {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-profile-navigation-item > a .giz-icon {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-profile-navigation-item > a.active {
+  color: rgb(90, 10, 100);
+  /*Bottom Line*/
+}
+[client-theme] .giz-profile-navigation-item > a.active .giz-icon svg {
+  color: rgb(90, 10, 100);
+}
+[client-theme] .giz-profile-navigation-item > a.active:before {
+  background-color: rgb(90, 10, 100);
+}
+[client-theme] .giz-user-history {
+  /*Pagination buttons.*/
+}
+[client-theme] .giz-user-history__header {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-user-history__body {
+  background-color: rgb(230, 230, 230);
+  border: 0.1rem solid rgb(70, 70, 70);
+}
+[client-theme] .giz-user-history__body .giz-animate-spinner svg {
+  color: rgb(90, 10, 100);
+}
+[client-theme] .giz-user-history__footer .giz-button {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-user-history__footer .giz-button:hover {
+  background-color: rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-user-history__footer .giz-button.disabled,
+[client-theme] .giz-user-history__footer .giz-button[disabled] {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-user-time-products-title-header-tooltip-item__icon {
+  background-color: rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-user-time-products-properties-header-tooltip-item__icon {
+  background-color: rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-user-time-products-title-header-tooltip {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-user-time-products-title-header-tooltip-wrapper {
+  background-color: rgb(230, 230, 230);
+}
+[client-theme] .giz-user-time-products-properties-header-tooltip {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-user-time-products-properties-header-tooltip-wrapper {
+  background-color: rgb(230, 230, 230);
+}
+[client-theme] .giz-user-time-products-title-header-tooltip-wrapper {
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.35), 0 0.2rem 2.1rem rgba(0, 0, 0, 0.35);
+}
+[client-theme] .giz-user-time-products-properties-header-tooltip-wrapper {
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.35), 0 0.2rem 2.1rem rgba(0, 0, 0, 0.35);
+}
+[client-theme] .order-line-details a.order-line-details-product-name {
+  color: rgb(230, 0, 230);
+}
+[client-theme] .order-details-points-title {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .order-details-points {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .order-details-notes-title {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .order-details-notes {
+  color: rgb(50, 50, 50);
+}
+
+[client-theme] {
+  /*Global Search*/
+  /*No results text style.*/
+}
+[client-theme] .giz-global-search {
+  background-color: rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-global-search input {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-global-search .giz-global-search-dropdown {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+[client-theme] .giz-global-search .giz-global-search-dropdown .giz-animate-spinner svg {
+  color: rgb(90, 10, 100);
+}
+[client-theme] .giz-global-search .giz-global-search-dropdown .giz-global-search-section__header {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-global-search .giz-global-search-dropdown .giz-global-search-section__header__more {
+  color: rgb(230, 0, 230);
+}
+[client-theme] .giz-global-search .giz-global-search-dropdown .giz-global-search-result-card__category {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-global-search .giz-global-search-dropdown .giz-global-search-result-card__title {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-global-search .giz-global-search-dropdown .giz-empty-state__title {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-global-search .giz-global-search-dropdown .giz-empty-state__text {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-global-search:focus-within {
+  border: 0.2rem solid rgb(70, 5, 80);
+}
+[client-theme] .global-search-no-results {
+  color: rgb(70, 70, 70);
+}
+
+[client-theme] {
+  /*Password tooltip.*/
+}
+[client-theme] .giz-client-tooltip {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+}
+[client-theme] .giz-client-tooltip--top .giz-client-tooltip-pin {
+  border-color: rgb(230, 230, 230) transparent transparent transparent;
+}
+[client-theme] .giz-client-tooltip--left .giz-client-tooltip-pin {
+  border-color: transparent transparent transparent rgb(230, 230, 230);
+}
+[client-theme] .giz-home-apps__header__quick-launch,
+[client-theme] .giz-home-apps__header__ads,
+[client-theme] .giz-shop__products__header__tab {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+[client-theme] .quick-launcher-switch.giz-button-group {
+  border: 0.1rem solid rgba(170, 170, 170, 0.8);
+}
+[client-theme] .quick-launcher-switch.giz-button-group .giz-button {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .quick-launcher-switch.giz-button-group .giz-button.selected {
+  color: rgb(90, 10, 100);
+  background-color: rgba(170, 170, 170, 0.8);
+}
+[client-theme] .giz-dock-item-tooltip {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
+}
+[client-theme] .giz-user-online-deposit {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-user-online-deposit__submitted__summary {
+  border-bottom: 0.1rem solid rgb(70, 70, 70);
+}
+[client-theme] .giz-user-online-deposit__submitted__qr {
+  border: 0.1rem solid rgb(70, 70, 70);
+}
+[client-theme] .giz-user-online-deposit__submitted__qr__label {
+  color: rgb(70, 70, 70);
+  background-color: rgb(230, 230, 230);
+}
+[client-theme] .giz-user-online-deposit__submitted__action {
+  border: 0.1rem solid rgb(70, 70, 70);
+}
+[client-theme] .giz-user-online-deposit__submitted__action__label {
+  color: rgb(70, 70, 70);
+  background-color: rgb(230, 230, 230);
+}
+[client-theme] .giz-user-online-deposit-menu {
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.35), 0 0.2rem 2.1rem rgba(0, 0, 0, 0.35);
+}
+[client-theme] .giz-user-online-deposit-dialog .giz-button-group .giz-button {
+  color: rgb(50, 50, 50);
+  background-color: rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-user-online-deposit-dialog .giz-button-group .giz-button.selected {
+  color: rgb(90, 10, 100);
+  background-color: rgba(170, 170, 170, 0.8);
+}
+[client-theme] .giz-ads-carousel-item__content__actions .giz-button {
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.1), 0 0.8rem 20.4rem rgba(0, 0, 0, 0.35);
+}
+[client-theme] .giz-ads-carousel-item {
+  background-color: rgb(230, 230, 230);
+}
+[client-theme] .giz-client-popup {
+  filter: drop-shadow(0 0.4rem 20 rgba(0, 0, 0, 0.35));
+}
+[client-theme] .giz-client-tooltip {
+  filter: drop-shadow(0 0.4rem 20 rgba(0, 0, 0, 0.35));
+}
+[client-theme] .giz-home-apps__header__quick-launch {
+  box-shadow: inset 0 0 10.1rem rgba(255, 255, 255, 0.05);
+}
+[client-theme] .giz-home-apps__header__ads {
+  box-shadow: inset 0 0 10.1rem rgba(255, 255, 255, 0.05);
+}
+[client-theme] .giz-shop__products__header__tab {
+  box-shadow: inset 0 0 10.1rem rgba(255, 255, 255, 0.05);
+}
+[client-theme] .giz-dialog {
+  background: linear-gradient(180deg, rgba(210, 210, 210, 0.2) 0%, rgba(210, 210, 210, 0.9) 100%);
+  -webkit-backdrop-filter: blur(3rem);
+          backdrop-filter: blur(3rem);
+}
+[client-theme] .giz-client-dialog {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+  box-shadow: 0 0.8rem 3.2rem rgba(0, 0, 0, 0.1);
+}
+[client-theme] .giz-client-dialog__header__title {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-client-dialog__header__subtitle {
+  color: rgb(70, 70, 70);
+}
+[client-theme] .giz-client-alert-dialog {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-client-alert-dialog .giz-client-alert-message {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-data-grid,
+[client-theme] .giz-user-history__body .giz-data-grid,
+[client-theme] .giz-checkout-dialog .giz-checkout__list .giz-data-grid {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+  /*Header*/
+  /*Body*/
+  /*Expanded Row*/
+}
+[client-theme] .giz-data-grid thead td,
+[client-theme] .giz-data-grid thead th,
+[client-theme] .giz-user-history__body .giz-data-grid thead td,
+[client-theme] .giz-user-history__body .giz-data-grid thead th,
+[client-theme] .giz-checkout-dialog .giz-checkout__list .giz-data-grid thead td,
+[client-theme] .giz-checkout-dialog .giz-checkout__list .giz-data-grid thead th {
+  color: rgb(70, 70, 70);
+  background-color: rgb(230, 230, 230);
+}
+[client-theme] .giz-data-grid tbody,
+[client-theme] .giz-user-history__body .giz-data-grid tbody,
+[client-theme] .giz-checkout-dialog .giz-checkout__list .giz-data-grid tbody {
+  /*Row Hover*/
+}
+[client-theme] .giz-data-grid tbody > tr:not(.giz-data-grid-row-detail):hover,
+[client-theme] .giz-user-history__body .giz-data-grid tbody > tr:not(.giz-data-grid-row-detail):hover,
+[client-theme] .giz-checkout-dialog .giz-checkout__list .giz-data-grid tbody > tr:not(.giz-data-grid-row-detail):hover {
+  background-color: rgba(210, 210, 210, 0.8);
+}
+[client-theme] .giz-data-grid .giz-data-grid-row-detail,
+[client-theme] .giz-user-history__body .giz-data-grid .giz-data-grid-row-detail,
+[client-theme] .giz-checkout-dialog .giz-checkout__list .giz-data-grid .giz-data-grid-row-detail {
+  background-color: rgba(170, 170, 170, 0.8);
+}
+[client-theme] .giz-user-lock {
+  color: rgb(50, 50, 50);
+}
+[client-theme] .giz-user-lock-overlay {
+  background: linear-gradient(180deg, rgba(210, 210, 210, 0.2) 0%, rgba(210, 210, 210, 0.9) 100%);
+  -webkit-backdrop-filter: blur(3rem);
+          backdrop-filter: blur(3rem);
+}
+[client-theme] .giz-user-lock__title {
+  text-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25), 0 0.8rem 2.4rem rgba(0, 0, 0, 0.2);
+}
+[client-theme] .giz-user-lock__subtitle {
+  text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.25), 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+[client-theme].giz-notifications {
+  color: rgb(50, 50, 50);
+  background-color: rgb(230, 230, 230);
+}
+[client-theme].giz-notifications__header {
+  background-color: rgba(210, 210, 210, 0.8);
+}/*# sourceMappingURL=main.css.map */

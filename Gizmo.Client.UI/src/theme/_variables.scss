@@ -1,0 +1,97 @@
+/*Basic Colors*/
+$primary-color: rgb(90, 10, 100);
+$primary-color-light: rgb(150, 20, 160);
+
+$primary-text-color: rgb(230, 230, 230);
+
+$background-color: rgb(230, 230, 230);
+$background-color-highlight: rgba(210, 210, 210, 0.8);
+$background-color-highlight-active: rgba(170, 170, 170, 0.8);
+
+$background-text-color: rgb(50, 50, 50);
+$background-text-color-light: rgb(70, 70, 70);
+
+$critical-color: rgb(255, 100, 0);
+$link-color: rgb(230, 0, 230);
+/*End Basic Colors*/
+
+/*Borders*/
+$border-rest: rgb(90, 10, 100);
+$border-hover: rgb(150, 20, 160);
+$border-focus: rgb(70, 5, 80);
+$border-disabled: rgb(148, 148, 148);
+/*End Borders*/
+
+/*Buttons*/
+$button-accent-rest-color: $primary-text-color;
+$button-accent-rest-background-color: $primary-color;
+
+$button-accent-hover-color: $primary-text-color;
+$button-accent-hover-background-color: $primary-color-light;
+
+$button-accent-disabled-color: rgb(100, 100, 100);
+$button-accent-disabled-background-color: gray;
+
+$button-outline-rest-color: $primary-color;
+$button-outline-rest-background-color: transparent;
+
+$button-outline-hover-color: $primary-color-light;
+$button-outline-hover-background-color: transparent;
+
+$button-outline-disabled-color: rgb(114, 114, 114);
+$button-outline-disabled-background-color: transparent;
+
+$button-text-rest-color: $background-text-color-light;
+$button-text-rest-background-color: transparent;
+
+$button-text-hover-color: $background-text-color;
+$button-text-hover-background-color: transparent;
+
+$button-text-disabled-color: rgb(114, 114, 114);
+$button-text-disabled-background-color: transparent;
+/*End Buttons*/
+
+$input-placeholder-color: rgb(114, 114, 114);
+$input-disabled-text-color: rgb(114, 114, 114);
+$input-disabled-border-color: rgb(114, 114, 114);
+
+$quick-launch-background-color: rgba(255, 255, 255, 0.4);
+
+$dialog-overlay-background: linear-gradient(180deg,
+        rgba(210, 210, 210, 0.2) 0%,
+        rgba(210, 210, 210, 0.9) 100%);
+$dialog-overlay-backdrop-filter: blur(3rem);
+
+$background-image-gradient: linear-gradient(180deg,
+        rgba(255, 255, 255, 0.0001) 0%,
+        rgba(255, 255, 255, 0.0156863) 9.22%,
+        rgba(255, 255, 255, 0.054902) 18.76%,
+        rgba(255, 255, 255, 0.117647) 28.48%,
+        rgba(255, 255, 255, 0.2) 38.19%,
+        rgba(255, 255, 255, 0.290196) 47.75%,
+        rgba(255, 255, 255, 0.392157) 56.99%,
+        rgba(255, 255, 255, 0.501961) 65.75%,
+        rgba(255, 255, 255, 0.607843) 73.87%,
+        rgba(255, 255, 255, 0.709804) 81.18%,
+        rgba(255, 255, 255, 0.8) 87.52%,
+        rgba(255, 255, 255, 0.846259) 90.45%,
+        rgba(255, 255, 255, 0.882353) 92.74%,
+        rgba(255, 255, 255, 0.90408) 92.75%,
+        rgba(255, 255, 255, 0.945098) 96.66%,
+        rgba(255, 255, 255, 0.959815) 99.12%,
+        rgba(255, 255, 255, 0.978709) 99.13%,
+        rgba(255, 255, 255, 0.984314) 99.14%,
+        rgba(255, 255, 255, 0.986777) 99.98%,
+        rgba(255, 255, 255, 0.996851) 99.99%,
+        #ffffff 100%,
+        #ffffff 100%,
+        #ffffff 100%);
+$background-image-backdrop-filter: blur(0.4rem);
+
+$text-shadow-1: rgba(0, 0, 0, 0.25);
+$text-shadow-2: rgba(0, 0, 0, 0.2);
+
+$box-shadow-1: rgba(0, 0, 0, 0.1);
+$box-shadow-2: rgba(0, 0, 0, 0.35);
+$box-shadow-3: rgba(0, 0, 0, 0.25);
+$box-shadow-4: rgba(255, 255, 255, 0.05);

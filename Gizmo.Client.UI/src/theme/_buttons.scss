@@ -1,0 +1,245 @@
+[client-theme] {
+
+	//##############################
+	//Accent Button
+	//##############################
+
+	/*Rest*/
+	.giz-button--fill.accent:not(.disabled) {
+		color: $button-accent-rest-color;
+		background-color: $button-accent-rest-background-color;
+
+		.giz-animate-spinner svg {
+			color: $button-accent-rest-color;
+		}
+	}
+
+	/*Hover*/
+	.giz-button--fill.accent:not(.disabled):hover {
+		color: $button-accent-hover-color;
+		background-color: $button-accent-hover-background-color;
+	}
+
+	/*Disabled*/
+	.giz-button--fill.accent.disabled,
+	.giz-button--fill[disabled] {
+		color: $button-accent-disabled-color;
+		background-color: $button-accent-disabled-background-color;
+		
+		.giz-animate-spinner svg {
+			color: $button-accent-disabled-color;
+		}
+	}
+
+	//##############################
+	//End Accent Button
+	//##############################
+
+	//##############################
+	//Primary Button
+	//##############################
+
+	/*Rest*/
+	.giz-button--fill.primary:not(.disabled) {
+		color: $button-accent-rest-color;
+		background-color: $button-accent-rest-background-color;
+		
+		.giz-animate-spinner svg {
+			color: $button-accent-rest-color;
+		}
+	}
+
+	/*Hover*/
+	.giz-button--fill.primary:not(.disabled):hover {
+		color: $button-accent-hover-color;
+		background-color: $button-accent-hover-background-color;
+	}
+
+	/*Disabled*/
+	.giz-button--fill.primary.disabled,
+	.giz-button--fill[disabled] {
+		color: $button-accent-disabled-color;
+		background-color: $button-accent-disabled-background-color;
+
+		.giz-animate-spinner svg {
+			color: $button-accent-disabled-color;
+		}
+	}
+
+	//##############################
+	//End Primary Button
+	//##############################
+
+	//##############################
+	//Outline Button
+	//##############################
+
+	/*Rest*/
+	.giz-button--outline.primary:not(.disabled) {
+		color: $button-outline-rest-color;
+		background-color: $button-outline-rest-background-color;
+		border: 0.2rem solid $border-rest;
+
+		.giz-animate-spinner svg {
+			color: $button-outline-rest-color;
+		}
+	}
+
+	/*Hover*/
+	.giz-button--outline.primary:not(.disabled):hover {
+		color: $button-outline-hover-color;
+		background-color: $button-outline-hover-background-color;
+		border: 0.2rem solid $border-hover;
+	}
+
+	/*Disabled*/
+	.giz-button--outline.primary.disabled,
+	.giz-button--outline[disabled] {
+		color: $button-outline-disabled-color;
+		background-color: $button-outline-disabled-background-color;
+		border: 0.2rem solid $border-disabled;
+		
+		.giz-animate-spinner svg {
+			color: $button-outline-disabled-color;
+		}
+	}
+
+	/*Rest*/
+	.giz-button--outline.accent:not(.disabled) {
+		color: $button-outline-rest-color;
+		background-color: $button-outline-rest-background-color;
+		border: 0.2rem solid $border-rest;
+
+		.giz-animate-spinner svg {
+			color: $button-outline-rest-color;
+		}
+	}
+
+	/*Hover*/
+	.giz-button--outline.accent:not(.disabled):hover {
+		color: $button-outline-hover-color;
+		background-color: $button-outline-hover-background-color;
+		border: 0.2rem solid $border-hover;
+	}
+
+	/*Disabled*/
+	.giz-button--outline.accent.disabled,
+	.giz-button--outline[disabled] {
+		color: $button-outline-disabled-color;
+		background-color: $button-outline-disabled-background-color;
+		border: 0.2rem solid $border-disabled;
+		
+		.giz-animate-spinner svg {
+			color: $button-outline-disabled-color;
+		}
+	}
+
+	/*Rest*/
+	.giz-button--outline.info:not(.disabled) {
+		color: $button-outline-rest-color;
+		background-color: $button-outline-rest-background-color;
+		border: 0.2rem solid $border-rest;
+		
+		.giz-animate-spinner svg {
+			color: $button-outline-rest-color;
+		}
+	}
+
+	/*Hover*/
+	.giz-button--outline.info:not(.disabled):hover {
+		color: $button-outline-hover-color;
+		background-color: $button-outline-hover-background-color;
+		border: 0.2rem solid $border-hover;
+	}
+
+	/*Disabled*/
+	.giz-button--outline.info.disabled,
+	.giz-button--outline[disabled] {
+		color: $button-outline-disabled-color;
+		background-color: $button-outline-disabled-background-color;
+		border: 0.2rem solid $border-disabled;
+		
+		.giz-animate-spinner svg {
+			color: $button-outline-disabled-color;
+		}
+	}
+
+	//##############################
+	//End Outline Button
+	//##############################
+
+	//##############################
+	//Text Button
+	//##############################
+
+	/*Rest*/
+	.giz-button--text {
+		color: $button-text-rest-color;
+		background-color: $button-text-rest-background-color;
+	}
+
+	/*Hover*/
+	.giz-button--text:hover {
+		color: $button-text-hover-color;
+		background-color: $button-text-hover-background-color;
+	}
+
+	.giz-button--text.disabled,
+	.giz-button--text[disabled] {
+		color: $button-text-disabled-color;
+		background-color: $button-text-disabled-background-color;
+	}
+
+	//##############################
+	//End Text Button
+	//##############################
+
+	//##############################
+	//Icon Text Button
+	//##############################
+
+	/*Rest*/
+	.giz-icon-button--text {
+		color: $background-text-color-light;
+	}
+
+	/*Hover*/
+	.giz-icon-button--text:hover {
+		color: $background-text-color;
+	}
+
+	//##############################
+	//End Icon Text Button
+	//##############################
+
+	//##############################
+	//ComboButton
+	//##############################
+
+	.giz-combo-button {
+		.giz-combo-button__dropdown {
+			.giz-list {
+				background-color: $background-color;
+				box-shadow: 0 0.4rem 2.0rem $box-shadow-1;
+
+				.giz-list-item {
+					color: $background-text-color;
+				}
+
+				&.giz-list--clickable {
+					.giz-list-item {
+						&:hover {
+							color: $background-text-color;
+							background-color: $background-color-highlight;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//##############################
+	//End ComboButton
+	//##############################
+
+}

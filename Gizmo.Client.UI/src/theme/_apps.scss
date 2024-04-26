@@ -1,0 +1,106 @@
+[client-theme] {
+
+    //##############################
+	//Applications
+	//##############################
+    
+    /*Application card.*/
+	.giz-app-card {
+		color: $background-text-color;
+		background-color: $background-color;
+
+		&__content {
+            &__image {
+                background-color: $background-color-highlight;
+            }
+
+            &__footer-category {
+                color: $background-text-color-light;
+                background-color: $background-color-highlight;
+            }
+		}
+
+        /*Blur image on hover.*/
+        :hover {
+            .giz-app-card__content__image__hovered {
+                background-color: $background-color-highlight-active;
+            }
+        }
+	}
+
+    /*Application details page.*/
+	.giz-app-details {
+		&__app {
+            /*Back button*/
+            &__navigation {
+                & > div {
+                    color: $background-text-color;
+                }
+            }
+
+            &__info {
+                &__image {
+                    background-color: $background-color-highlight;
+                }
+
+                &__details {
+                    color: $background-text-color;
+                }
+            }
+		}		
+
+		.giz-app-details-card-brand {
+			&-title {
+				color: $background-text-color-light;
+			}
+
+			&-text {
+				color: $background-text-color;
+			}
+		}
+	}
+
+    /*Executable button.*/
+	.giz-universal-executable {
+        &__description {
+            &__app {
+                color: $background-text-color-light;
+            }
+
+            &__exe {
+                color: $background-text-color;
+            }
+        }
+    }
+    
+    /*Application filters chip.*/
+    .giz-chip {
+        color: $primary-color;
+        background-color: $background-color;
+
+        .giz-filters-icon {
+            color: $primary-color;
+        }
+
+        .giz-icon-button {
+            svg {
+                color: $primary-text-color;
+            }
+
+            &.giz-input-button-clear {
+                .giz-icon {
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+
+	.giz-executable-card__executable-status {
+		text-shadow: 0 0.4rem 0.4rem $text-shadow-1;
+	}
+    
+	//##############################
+	//End Applications
+	//##############################
+
+}

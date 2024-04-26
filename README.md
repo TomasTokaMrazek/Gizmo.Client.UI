@@ -58,6 +58,8 @@ Web based client UI.
 - Add this file name with an extension to the app configuration file **'options.json'** to the **'ClientInterface.StyleSheet'** section.
 - Ctrl + F5 to refresh the app.
 
+For more information and samples check the **'Gizmo.Client.UI\src\theme'** folder.
+
 ## **Changing the background image**
 
 ### To change the background image, follow these steps:

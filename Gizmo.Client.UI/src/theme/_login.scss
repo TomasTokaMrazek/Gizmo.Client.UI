@@ -1,0 +1,79 @@
+[client-theme] {
+
+	//##############################
+	//Pages Login, Registration, Recovery
+	//##############################
+	
+	/*Host number*/
+	.giz-host-number {
+		color: $background-text-color;
+	}
+
+	/*Server connection icon*/
+	.giz-server {
+		color: $background-text-color;
+	}
+
+	/*Version colors*/
+	.giz-version {
+		&__title {
+			color: $background-text-color-light;
+		}
+
+		&__version {
+			color: $background-text-color;
+		}
+	}
+
+	/*Login, Registration, Recovery right side*/
+	.giz-login-card {
+		color: $background-text-color;
+		background-color: $background-color;
+
+		a {
+			color: $link-color;
+		}
+
+		/*Login Button Group*/
+		.giz-button-group {
+			border: 0.1rem solid $border-rest;
+
+			.giz-button {
+				color: $background-text-color;
+				background-color: transparent;
+
+				&.selected {
+					color: $button-accent-rest-color;
+					background-color: $button-accent-rest-background-color;
+				}
+			}
+		}
+
+		/*Login Separator*/
+		.giz-alternative-login {
+			&__separator {
+				background-color: $background-color;
+
+				/*Separator Line*/
+				&:before {
+					background-color: $background-text-color-light;
+				}
+
+				/*Separator Text*/
+				span {
+					color: $background-text-color-light;
+					background-color: $background-color;
+				}
+			}
+		}
+
+		.giz-login-subtitle--sign-up {
+			color: $background-text-color-light;
+		}
+	}
+
+	//##############################
+	//End Pages Login, Registration, Recovery
+	//##############################
+
+}
