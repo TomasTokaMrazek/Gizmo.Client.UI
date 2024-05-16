@@ -31,6 +31,12 @@
             break;
 
         default:
+
+            @if (!string.IsNullOrEmpty(MetaData.Icon))
+            {
+                <img src="@MetaData.Icon" alt='loading' class="giz-module-icon" />
+            }
+
             break;
     }
 
