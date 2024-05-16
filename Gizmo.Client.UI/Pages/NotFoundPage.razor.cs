@@ -1,4 +1,5 @@
-﻿using Gizmo.Client.UI.View.States;
+﻿using System.Linq;
+using Gizmo.Client.UI.View.States;
 using Gizmo.UI.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Options;
@@ -17,17 +18,29 @@ namespace Gizmo.Client.UI.Pages
         [Inject]
         IOptions<ClientHomeOptions> ClientHomeOptions { get; set; }
 
+        [Inject]
+        IUICompositionService IUICompositionService { get; set; }
+
         private void GoHome()
         {
             if (UserLoginStatusViewState.IsLoggedIn)
             {
-                if (!ClientHomeOptions.Value.Disabled)
+                var firstCustomModule = IUICompositionService.PageModules.Where(a => a.DisplayOrder < 0).OrderBy(a => a.DisplayOrder).FirstOrDefault();
+
+                if (firstCustomModule != null)
                 {
-                    NavigationService.NavigateTo(ClientRoutes.HomeRoute);
+                    NavigationService.NavigateTo(firstCustomModule.DefaultRoute);
                 }
                 else
                 {
-                    NavigationService.NavigateTo(ClientRoutes.ApplicationsRoute);
+                    if (!ClientHomeOptions.Value.Disabled)
+                    {
+                        NavigationService.NavigateTo(ClientRoutes.HomeRoute);
+                    }
+                    else
+                    {
+                        NavigationService.NavigateTo(ClientRoutes.ApplicationsRoute);
+                    }
                 }
             }
             else
