@@ -68,7 +68,7 @@ namespace Gizmo.Client.UI.Pages
 
         private async Task OnClickChangePasswordButtonHandler()
         {
-            await UserChangePasswordViewStateService.StartAsync(true);
+            await UserChangePasswordViewStateService.StartAsync(true, true);
         }
 
         private Task OnClickChangePictureButtonHandler()

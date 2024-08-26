@@ -64,11 +64,11 @@ namespace Gizmo.Client.UI.Services
             }, default, cancellationToken);
         }
 
-        public Task<AddDialogResult<EmptyComponentResult>> ShowChangePasswordDialogAsync(CancellationToken cancellationToken = default)
+        public Task<AddDialogResult<EmptyComponentResult>> ShowChangePasswordDialogAsync(bool closable, CancellationToken cancellationToken = default)
         {
             return ShowDialogAsync<ChangePasswordDialog>(new Dictionary<string, object>(), new DialogDisplayOptions()
             {
-                Closable = false,
+                Closable = closable,
                 CloseOnClick = false
             }, default, cancellationToken);
         }
