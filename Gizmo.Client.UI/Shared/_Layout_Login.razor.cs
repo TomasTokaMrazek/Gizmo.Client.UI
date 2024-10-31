@@ -14,6 +14,13 @@ namespace Gizmo.Client.UI.Shared
         private bool _previousIsIdle = false;
         private bool _slideIn = false;
         private bool _slideOut = false;
+        private bool _locked = false;
+
+        [Inject()]
+        UserRegistrationConfigurationViewState UserRegisterConfigurationViewState { get; init; }
+
+        [Inject]
+        IOptions<UserLoginOptions> UserLoginOptions { get; set; }
 
         [Inject]
         HostOutOfOrderViewState HostOutOfOrderViewState { get; set; }
@@ -70,6 +77,8 @@ namespace Gizmo.Client.UI.Shared
             _previousIsIdle = UserIdleViewState.IsIdle;
             UserIdleViewState.OnChange += UserIdleViewState_OnChange;
 
+            _locked = UserLoginOptions.Value.Disabled && !UserRegisterConfigurationViewState.IsEnabled;
+
             base.OnInitialized();
         }
 
@@ -77,7 +86,7 @@ namespace Gizmo.Client.UI.Shared
 
         protected string ClassName => new ClassMapper()
                 .If("shrink", () => _slideIn)
-                .If("grow", () => _slideOut)
+                .If("grow", () => _slideOut || _locked)
                 .If("collapsed", () => !_slideIn && !_slideOut && !_previousIsIdle)
                 .AsString();
 

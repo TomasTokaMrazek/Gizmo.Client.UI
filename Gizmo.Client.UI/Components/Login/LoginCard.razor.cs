@@ -1,6 +1,7 @@
 ﻿using Gizmo.Client.UI.View.States;
 using Gizmo.Web.Components;
 using Microsoft.AspNetCore.Components;
+using Microsoft.Extensions.Options;
 using System.Threading.Tasks;
 
 namespace Gizmo.Client.UI.Components
@@ -10,8 +11,16 @@ namespace Gizmo.Client.UI.Components
         private bool _previousIsIdle = false;
         private bool _slideIn = false;
         private bool _slideOut = false;
+        private bool _locked = false;
+
 
         #region PROPERTIES
+
+        [Inject()]
+        UserRegistrationConfigurationViewState UserRegisterConfigurationViewState { get; init; }
+
+        [Inject]
+        IOptions<UserLoginOptions> UserLoginOptions { get; set; }
 
         [Inject]
         UserIdleViewState UserIdleViewState { get; set; }
@@ -54,6 +63,8 @@ namespace Gizmo.Client.UI.Components
             _previousIsIdle = UserIdleViewState.IsIdle;
             UserIdleViewState.OnChange += UserIdleViewState_OnChange;
 
+            _locked = UserLoginOptions.Value.Disabled && !UserRegisterConfigurationViewState.IsEnabled;
+
             base.OnInitialized();
         }
 
@@ -63,7 +74,7 @@ namespace Gizmo.Client.UI.Components
                 .Add("giz-login-card")
                 .If("slide-in", () => _slideIn)
                 .If("slide-out", () => _slideOut)
-                .If("hidden", () => !_slideIn && !_slideOut && _previousIsIdle)
+                .If("hidden", () => !_slideIn && !_slideOut && _previousIsIdle || _locked)
                 .AsString();
 
         #endregion
