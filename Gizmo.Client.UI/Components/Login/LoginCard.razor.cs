@@ -38,8 +38,8 @@ namespace Gizmo.Client.UI.Components
 
         private async void UserIdleViewState_OnChange(object sender, System.EventArgs e)
         {
-            if (_previousIsIdle == UserIdleViewState.IsIdle)
-                return;
+            if (_locked) return;
+            if (_previousIsIdle == UserIdleViewState.IsIdle) return;
 
             if (UserIdleViewState.IsIdle)
             {
@@ -72,8 +72,8 @@ namespace Gizmo.Client.UI.Components
 
         protected string ClassName => new ClassMapper()
                 .Add("giz-login-card")
-                .If("slide-in", () => _slideIn)
-                .If("slide-out", () => _slideOut)
+                .If("slide-in", () => _slideIn && !_locked)
+                .If("slide-out", () => _slideOut && !_locked)
                 .If("hidden", () => !_slideIn && !_slideOut && _previousIsIdle || _locked)
                 .AsString();
 
