@@ -1,0 +1,46 @@
+name: build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-wpf:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          submodules: recursive
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: "6.0.x"
+      - name: Restore
+        run: dotnet restore
+      - name: Publish
+        run: dotnet publish Gizmo.Client.UI.Host.WPF/Gizmo.Client.UI.Host.WPF.csproj -c Release
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Gizmo.Client.UI.Host.WPF
+          path: Gizmo.Client.UI.Host.WPF/bin/Release/net6.0-windows/publish/
+  build-web:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          submodules: recursive
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: "6.0.x"
+      - name: Restore
+        run: dotnet restore
+      - name: Publish
+        run: dotnet publish Gizmo.Client.UI.Host.Web/Gizmo.Client.UI.Host.Web.csproj -c Release
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Gizmo.Client.UI.Host.Web
+          path: Gizmo.Client.UI.Host.Web/bin/Release/net6.0/publish/
