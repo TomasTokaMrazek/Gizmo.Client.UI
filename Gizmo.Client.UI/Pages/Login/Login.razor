@@ -1,4 +1,4 @@
-﻿@namespace Gizmo.Client.UI.Pages
+@namespace Gizmo.Client.UI.Pages
 @inherits CustomDOMComponentBase
 @layout _Layout_Login
 @using System.Threading
@@ -123,9 +123,7 @@
                         <div class="giz-alternative-login__qr__description__title">@LocalizationService.GetString("GIZ_LOGIN_QR_TITLE")</div>
                         <div class="giz-alternative-login__qr__description__subtitle">@LocalizationService.GetString("GIZ_LOGIN_QR_MESSAGE")</div>
                     </div>
-                    <div class="giz-alternative-login__qr__image">
-                        @((MarkupString)HostQRCodeViewState.HostQRCode)
-                    </div>
+                    <CustomLogo />
                 </div>
             </div>
         }

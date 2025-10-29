@@ -1,0 +1,21 @@
+@namespace Gizmo.Client.UI.Components
+@inherits CustomDOMComponentBase
+
+<div class="custom-logo-container">
+    @if (isLoading)
+    {
+        <div class="custom-logo-loading">
+            Loading custom logo...
+        </div>
+    }
+    else if (hasError)
+    {
+        <div class="custom-logo-error">
+            Failed to load custom logo
+        </div>
+    }
+    else if (!string.IsNullOrEmpty(imageUrl))
+    {
+        <img src="@imageUrl" alt="Custom Logo" style="max-width: 200px; max-height: 200px; display: block; margin: 0 auto;" />
+    }
+</div>
