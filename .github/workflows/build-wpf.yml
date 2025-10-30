@@ -23,4 +23,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: publish
-          path: Gizmo.Client.UI.Host.WPF/bin/Release/net6.0-windows/win10-x64/publish/**/*
+          path: Gizmo.Client.UI.Host.WPF/bin/Release/net6.0-windows/publish/
