@@ -22,7 +22,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: publish
+          name: Gizmo.Client.UI.Host.WPF
           path: Gizmo.Client.UI.Host.WPF/bin/Release/net6.0-windows/publish/
   build-web:
     runs-on: windows-latest
@@ -42,5 +42,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: publish
+          name: Gizmo.Client.UI.Host.Web
           path: Gizmo.Client.UI.Host.Web/bin/Release/net6.0-windows/publish/
