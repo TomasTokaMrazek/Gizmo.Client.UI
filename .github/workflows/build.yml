@@ -43,4 +43,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Gizmo.Client.UI.Host.Web
-          path: Gizmo.Client.UI.Host.Web/bin/Release/net6.0-windows/publish/
+          path: Gizmo.Client.UI.Host.Web/bin/Release/net6.0/publish/
